@@ -1,7 +1,7 @@
 resource "aws_security_group" "sg" {
   name        = "sg_ssh_http"
   description = "Security group for Instance"
-  vpc_id      = aws_vpc.vpc.id
+  vpc_id      = aws_vpc.myVpc.id
 
   ingress {
     description = "SSH"
